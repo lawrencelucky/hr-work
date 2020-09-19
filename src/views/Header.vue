@@ -2,22 +2,27 @@
   <div class="header-container">
     <header class="header-section">
       <app-navbar></app-navbar>
+      <app-jumbotron></app-jumbotron>
     </header>
   </div>
 </template>
 
 <script>
 import Navbar from '../components/Navbar';
+import Jumbotron from '../components/Jumbotron';
 
 export default {
   components: {
-    appNavbar: Navbar
+    appNavbar: Navbar,
+    appJumbotron: Jumbotron
   }
 };
 </script>
 
 <style lang="scss">
 .header-container {
+  color: #ffffff;
+
   .header-section {
     background-image: linear-gradient(
         0.08deg,
@@ -28,7 +33,6 @@ export default {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top;
-    height: 100vh;
   }
 }
 </style>

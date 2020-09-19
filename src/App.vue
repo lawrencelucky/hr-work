@@ -1,15 +1,18 @@
 <template>
   <div id="app">
     <app-header></app-header>
+    <app-whoweare></app-whoweare>
   </div>
 </template>
 
 <script>
 import Header from './views/Header';
+import Whoweare from './views/WhoWeAre';
 
 export default {
   components: {
-    appHeader: Header
+    appHeader: Header,
+    appWhoweare: Whoweare
   }
 };
 </script>
@@ -28,10 +31,11 @@ html {
 }
 
 #app {
-  font-family: 'Fira Sans', sans-serif;
+  font-family: 'Source Sans Pro', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-size: 1.6rem;
   font-weight: 300;
+  letter-spacing: 0.9px;
 }
 </style>
