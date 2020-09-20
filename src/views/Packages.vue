@@ -20,5 +20,17 @@ export default {
 <style lang="scss">
 .packages-container {
   margin: 5rem 10rem 8rem;
+
+  @media screen and (max-width: 1024px) {
+    margin: 5rem 1rem 8rem;
+  }
+
+  @media screen and (max-width: 768px) {
+    margin: 5rem;
+  }
+
+  @media screen and (max-width: 425px) {
+    margin: 5rem 1rem;
+  }
 }
 </style>

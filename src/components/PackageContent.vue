@@ -78,11 +78,39 @@ export default {};
       grid-gap: 7rem;
       justify-items: center;
 
+      @media screen and (max-width: 768px) {
+        grid-template-columns: repeat(1, 1fr);
+      }
+
+      @media screen and (max-width: 1024px) {
+        grid-gap: 2rem;
+      }
+
       .card-container {
         .card {
           width: 32rem;
           box-shadow: rgba(136, 136, 136, 0.25) 0px 6px 15px;
           border-radius: 1.5rem;
+
+          @media screen and (max-width: 960px) {
+            width: 30rem;
+          }
+
+          @media screen and (max-width: 768px) {
+            width: 40rem;
+          }
+
+          @media screen and (max-width: 425px) {
+            width: 38rem;
+          }
+
+          @media screen and (max-width: 375px) {
+            width: 32rem;
+          }
+
+          @media screen and (max-width: 320px) {
+            width: 28rem;
+          }
 
           .card-head {
             background-image: url(../assets/images/package.png);
@@ -131,6 +159,10 @@ export default {};
               font-weight: 600;
               color: #565656;
               margin-top: 5rem;
+
+              @media screen and (max-width: 375px) {
+                font-size: 1.4rem;
+              }
             }
 
             .price {
@@ -138,6 +170,10 @@ export default {};
               font-size: 3rem;
               font-weight: 700;
               margin-top: 1rem;
+
+              @media screen and (max-width: 375px) {
+                font-size: 2.2rem;
+              }
             }
 
             .stages {
@@ -156,6 +192,11 @@ export default {};
               color: #888888;
               border-radius: 10rem;
               cursor: pointer;
+
+              @media screen and (max-width: 375px) {
+                padding: 1rem 4rem;
+                font-size: 1.4rem;
+              }
 
               &:focus {
                 outline: 0;

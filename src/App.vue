@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <app-header></app-header>
+    <app-header :scroll-value="this.scroll"></app-header>
     <app-whoweare></app-whoweare>
     <app-packages></app-packages>
     <app-blog></app-blog>
@@ -18,6 +18,23 @@ import Career from './views/Career';
 import Footer from './views/Footer';
 
 export default {
+  data() {
+    return {
+      scroll: false
+    };
+  },
+  created() {
+    window.addEventListener('scroll', this.handleScroll);
+  },
+  methods: {
+    handleScroll() {
+      if (window.scrollY <= 0) {
+        this.scroll = false;
+      } else {
+        this.scroll = true;
+      }
+    }
+  },
   components: {
     appHeader: Header,
     appWhoweare: Whoweare,
@@ -49,5 +66,9 @@ html {
   font-size: 1.6rem;
   font-weight: 300;
   letter-spacing: 0.9px;
+
+  @media screen and (max-width: 425px) {
+    font-size: 1.3rem;
+  }
 }
 </style>

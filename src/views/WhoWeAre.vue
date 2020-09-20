@@ -22,5 +22,17 @@ export default {
 <style lang="scss">
 .who-we-are-container {
   margin: 5rem 10rem;
+
+  @media screen and (max-width: 1024px) {
+    margin: 5rem 1rem;
+  }
+
+  @media screen and (max-width: 768px) {
+    margin: 5rem;
+  }
+
+  @media screen and (max-width: 425px) {
+    margin: 5rem 1rem;
+  }
 }
 </style>

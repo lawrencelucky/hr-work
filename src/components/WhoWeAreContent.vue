@@ -60,10 +60,23 @@ export default {};
     display: flex;
     margin-top: 4.5rem;
 
+    @media screen and (max-width: 768px) {
+      display: flex;
+      flex-flow: column;
+    }
+
+    @media screen and (max-width: 425px) {
+      margin-top: 3rem;
+    }
+
     .left-content {
       .text-container {
         width: 90%;
         color: #565656;
+
+        @media screen and (max-width: 768px) {
+          width: 100%;
+        }
 
         .paragraph-one {
           margin-bottom: 3rem;
@@ -81,13 +94,43 @@ export default {};
         grid-gap: 10rem;
         margin-top: 5rem;
 
+        @media screen and (max-width: 1024px) {
+          grid-gap: 5rem;
+          margin-top: 3rem;
+        }
+
+        @media screen and (max-width: 768px) {
+          justify-content: center;
+          margin-bottom: 3rem;
+          margin-top: 4rem;
+        }
+
+        @media screen and (max-width: 425px) {
+          grid-template-columns: repeat(1, 1fr);
+          margin-top: 3rem;
+          grid-gap: 3rem;
+        }
+
         .card {
-          // width: 20rem;
           background: rgba(249, 155, 173, 0.5);
           color: #ef0633;
           width: 252px;
           height: 154px;
           padding: 3rem;
+
+          @media screen and (max-width: 1024px) {
+            width: 200px;
+            padding: 2rem;
+          }
+
+          @media screen and (max-width: 768px) {
+            width: 220px;
+          }
+
+          @media screen and (max-width: 425px) {
+            width: 100%;
+            height: auto;
+          }
 
           h3 {
             margin-bottom: 0.5rem;
@@ -98,6 +141,10 @@ export default {};
             font-weight: 600;
             line-height: 2.3rem;
             letter-spacing: 0.5px;
+
+            @media screen and (max-width: 425px) {
+              font-size: 1.3rem;
+            }
           }
         }
       }
@@ -105,8 +152,29 @@ export default {};
 
     .right-content {
       .image-container {
+        @media screen and (max-width: 768px) {
+          display: flex;
+          justify-content: center;
+        }
+
         .image {
           width: 50rem;
+
+          @media screen and (max-width: 960px) {
+            width: 45rem;
+          }
+
+          @media screen and (max-width: 425px) {
+            width: 38rem;
+          }
+
+          @media screen and (max-width: 375px) {
+            width: 35rem;
+          }
+
+          @media screen and (max-width: 320px) {
+            width: 28rem;
+          }
         }
       }
     }
@@ -134,6 +202,12 @@ export default {};
         top: 32%;
       }
     }
+  }
+
+  @media screen and (max-width: 768px) {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
   }
 }
 </style>

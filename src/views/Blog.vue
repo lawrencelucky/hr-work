@@ -29,5 +29,17 @@ export default {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top;
+
+  @media screen and (max-width: 1024px) {
+    padding: 7rem 1rem;
+  }
+
+  @media screen and (max-width: 768px) {
+    padding: 5rem;
+  }
+
+  @media screen and (max-width: 425px) {
+    padding: 5rem 1rem;
+  }
 }
 </style>

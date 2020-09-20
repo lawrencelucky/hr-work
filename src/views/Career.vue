@@ -20,5 +20,17 @@ export default {
 <style lang="scss">
 .career-container {
   padding: 7rem 14rem;
+
+  @media screen and (max-width: 1024px) {
+    padding: 7rem 1rem;
+  }
+
+  @media screen and (max-width: 768px) {
+    padding: 5rem;
+  }
+
+  @media screen and (max-width: 425px) {
+    padding: 5rem 1rem;
+  }
 }
 </style>
