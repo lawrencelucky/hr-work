@@ -4,6 +4,7 @@
     <app-whoweare></app-whoweare>
     <app-packages></app-packages>
     <app-blog></app-blog>
+    <app-career></app-career>
     <app-footer></app-footer>
   </div>
 </template>
@@ -13,6 +14,7 @@ import Header from './views/Header';
 import Whoweare from './views/WhoWeAre';
 import Packages from './views/Packages';
 import Blog from './views/Blog';
+import Career from './views/Career';
 import Footer from './views/Footer';
 
 export default {
@@ -21,6 +23,7 @@ export default {
     appWhoweare: Whoweare,
     appPackages: Packages,
     appBlog: Blog,
+    appCareer: Career,
     appFooter: Footer
   }
 };
