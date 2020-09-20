@@ -3,6 +3,7 @@
     <app-header></app-header>
     <app-whoweare></app-whoweare>
     <app-packages></app-packages>
+    <app-blog></app-blog>
     <app-footer></app-footer>
   </div>
 </template>
@@ -11,6 +12,7 @@
 import Header from './views/Header';
 import Whoweare from './views/WhoWeAre';
 import Packages from './views/Packages';
+import Blog from './views/Blog';
 import Footer from './views/Footer';
 
 export default {
@@ -18,6 +20,7 @@ export default {
     appHeader: Header,
     appWhoweare: Whoweare,
     appPackages: Packages,
+    appBlog: Blog,
     appFooter: Footer
   }
 };

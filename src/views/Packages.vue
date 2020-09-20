@@ -19,6 +19,6 @@ export default {
 
 <style lang="scss">
 .packages-container {
-  margin: 5rem 10rem;
+  margin: 5rem 10rem 8rem;
 }
 </style>
