@@ -124,7 +124,7 @@ export default {};
       text-align: center;
       border: 0;
       border-radius: 5px;
-      box-shadow: 0px 3px 8px -1px #e9282d;
+      box-shadow: 0 6px 15px rgba(233, 40, 45, 0.25);
       cursor: pointer;
       position: relative;
 
