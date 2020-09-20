@@ -2,17 +2,20 @@
   <div id="app">
     <app-header></app-header>
     <app-whoweare></app-whoweare>
+    <app-packages></app-packages>
   </div>
 </template>
 
 <script>
 import Header from './views/Header';
 import Whoweare from './views/WhoWeAre';
+import Packages from './views/Packages';
 
 export default {
   components: {
     appHeader: Header,
-    appWhoweare: Whoweare
+    appWhoweare: Whoweare,
+    appPackages: Packages
   }
 };
 </script>
