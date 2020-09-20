@@ -3,6 +3,7 @@
     <app-header></app-header>
     <app-whoweare></app-whoweare>
     <app-packages></app-packages>
+    <app-footer></app-footer>
   </div>
 </template>
 
@@ -10,12 +11,14 @@
 import Header from './views/Header';
 import Whoweare from './views/WhoWeAre';
 import Packages from './views/Packages';
+import Footer from './views/Footer';
 
 export default {
   components: {
     appHeader: Header,
     appWhoweare: Whoweare,
-    appPackages: Packages
+    appPackages: Packages,
+    appFooter: Footer
   }
 };
 </script>

@@ -12,12 +12,18 @@
       <nav>
         <ul>
           <li class="nav-list">
-            <a class="nav-link" href="#">Who we are</a>
+            <a class="nav-link" href="#whoweare">Who we are</a>
           </li>
-          <li class="nav-list"><a class="nav-link" href="#">Packages</a></li>
-          <li class="nav-list"><a class="nav-link" href="#">Blog</a></li>
-          <li class="nav-list"><a class="nav-link" href="#">Careers</a></li>
-          <li class="nav-list"><a class="nav-link" href="#">Contact</a></li>
+          <li class="nav-list">
+            <a class="nav-link" href="#packages">Packages</a>
+          </li>
+          <li class="nav-list"><a class="nav-link" href="#blog">Blog</a></li>
+          <li class="nav-list">
+            <a class="nav-link" href="#careers">Careers</a>
+          </li>
+          <li class="nav-list">
+            <a class="nav-link" href="#contact">Contact</a>
+          </li>
         </ul>
       </nav>
     </div>

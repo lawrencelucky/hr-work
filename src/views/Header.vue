@@ -1,5 +1,5 @@
 <template>
-  <div class="header-container">
+  <div id="about" class="header-container">
     <header class="header-section">
       <app-navbar></app-navbar>
       <app-jumbotron></app-jumbotron>
