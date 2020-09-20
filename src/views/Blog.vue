@@ -1,5 +1,5 @@
 <template>
-  <div class="blog-container">
+  <div id="blog" class="blog-container">
     <app-blog-header></app-blog-header>
     <app-blog-content></app-blog-content>
   </div>
