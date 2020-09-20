@@ -39,24 +39,46 @@ export default {};
 <style lang="scss">
 .jumbotron-container {
   .jumbotron {
-    height: 90vh;
+    height: 120vh;
     display: flex;
     flex-flow: column;
     align-items: center;
     justify-content: center;
     position: relative;
 
+    @media screen and (max-width: 1024px) {
+      height: 110vh;
+    }
+
+    @media screen and (max-width: 768px) {
+      justify-content: flex-end;
+      padding-bottom: 18rem;
+    }
+
     .jumbotron-text {
       font-weight: 300;
       width: 50%;
       text-align: center;
       margin-bottom: 1rem;
-      color: #ffffffe4;
+      color: #ffffff;
+
+      @media screen and (max-width: 1024px) {
+        width: 60%;
+      }
+
+      @media screen and (max-width: 425px) {
+        width: 100%;
+      }
     }
 
     .jumbotron-header {
       font-size: 4rem;
       font-weight: 700;
+
+      @media screen and (max-width: 425px) {
+        font-size: 3rem;
+        text-align: center;
+      }
     }
 
     .social-media--icons {
@@ -65,6 +87,14 @@ export default {};
       position: absolute;
       top: 48%;
       left: 4.5%;
+
+      @media screen and (max-width: 768px) {
+        top: 54%;
+      }
+
+      @media screen and (max-width: 425px) {
+        display: none;
+      }
 
       .icons {
         &:not(:last-child) {

@@ -1,7 +1,7 @@
 <template>
   <div id="about" class="header-container">
+    <app-navbar :scroll-value="this.scrollValue"></app-navbar>
     <header class="header-section">
-      <app-navbar></app-navbar>
       <app-jumbotron></app-jumbotron>
     </header>
   </div>
@@ -12,6 +12,7 @@ import Navbar from '../components/Navbar';
 import Jumbotron from '../components/Jumbotron';
 
 export default {
+  props: ['scrollValue'],
   components: {
     appNavbar: Navbar,
     appJumbotron: Jumbotron
@@ -34,6 +35,11 @@ export default {
     background-size: cover;
     background-position: top;
     clip-path: ellipse(70% 80% at 50% 20%);
+
+    @media screen and (max-width: 768px) {
+      background-size: cover;
+      // clip-path: circle(68.5% at 50% 20%);
+    }
   }
 }
 </style>

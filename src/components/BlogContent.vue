@@ -110,9 +110,17 @@ export default {};
       grid-template-columns: repeat(3, 1fr);
       grid-gap: 3rem;
 
+      @media screen and (max-width: 768px) {
+        grid-template-columns: repeat(1, 1fr);
+      }
+
       .card-container {
         padding: 3rem 4rem 4rem;
         border-radius: 5px;
+
+        @media screen and (max-width: 425px) {
+          padding: 3rem 2rem;
+        }
 
         .card {
           color: #ffffff;
@@ -122,6 +130,17 @@ export default {};
               font-size: 2.5rem;
               font-weight: 600;
               height: 8.5rem;
+
+              @media screen and (max-width: 768px) {
+                height: auto;
+                margin-bottom: 1.5rem;
+              }
+
+              @media screen and (max-width: 425px) {
+                height: auto;
+                margin-bottom: 1.5rem;
+                font-size: 2rem;
+              }
             }
           }
           .card-body {
@@ -135,9 +154,21 @@ export default {};
       grid-template-columns: repeat(2, 1fr);
       grid-gap: 3rem;
 
+      @media screen and (max-width: 768px) {
+        grid-template-columns: repeat(1, 1fr);
+      }
+
       .card-container {
         padding: 4rem 6rem;
         border-radius: 5px;
+
+        @media screen and (max-width: 768px) {
+          padding: 3rem 4rem;
+        }
+
+        @media screen and (max-width: 425px) {
+          padding: 3rem 2rem;
+        }
 
         .card {
           color: #ffffff;
@@ -147,6 +178,17 @@ export default {};
               font-size: 2.5rem;
               font-weight: 600;
               height: 8.5rem;
+
+              @media screen and (max-width: 768px) {
+                height: auto;
+                margin-bottom: 1.5rem;
+              }
+
+              @media screen and (max-width: 425px) {
+                height: auto;
+                margin-bottom: 1.5rem;
+                font-size: 2rem;
+              }
             }
           }
 
@@ -162,10 +204,6 @@ export default {};
 
     .black {
       background: rgba(33, 34, 35, 0.7);
-    }
-
-    .span-two {
-      grid-area: span 2;
     }
   }
 }
