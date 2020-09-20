@@ -1,5 +1,13 @@
 <template>
   <div id="contact" class="footer-container">
+    <div class="chat-us-container">
+      <div class="chat-us-content">
+        <h2>Chat with Us</h2>
+      </div>
+      <div class="image-container">
+        <img src="../assets/icons/chat-with-us.svg" alt="" />
+      </div>
+    </div>
     <div class="content">
       <div class="logo-container">
         <img
@@ -59,6 +67,38 @@ export default {};
 .footer-container {
   background: #ef0633;
   padding: 10rem 10rem 5rem 10rem;
+  position: relative;
+
+  .chat-us-container {
+    position: absolute;
+    display: flex;
+    margin-right: 10rem;
+    right: 0%;
+    top: -2.5rem;
+    background: #ffffff;
+    padding: 0.4rem 0.4rem 0.4rem 1.5rem;
+    border-radius: 10rem;
+    box-shadow: 0px 6px 15px rgba(71, 5, 7, 0.25);
+
+    .chat-us-content {
+      display: flex;
+      align-items: center;
+      margin-right: 1rem;
+
+      h2 {
+        color: #ef0633;
+        font-size: 1.6rem;
+      }
+    }
+    .image-container {
+      background-color: #ef0633;
+      padding: 1rem;
+      border-radius: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
 
   .content {
     display: grid;
