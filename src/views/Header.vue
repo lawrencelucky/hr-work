@@ -33,6 +33,7 @@ export default {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top;
+    clip-path: ellipse(70% 80% at 50% 20%);
   }
 }
 </style>
