@@ -1,5 +1,5 @@
 <template>
-  <div class="who-we-are-container">
+  <div id="whoweare" class="who-we-are-container">
     <div class="who-we-are-section">
       <app-whoweareheader></app-whoweareheader>
       <app-whowearecontent></app-whowearecontent>

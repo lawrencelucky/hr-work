@@ -1,5 +1,5 @@
 <template>
-  <div class="packages-container">
+  <div id="packages" class="packages-container">
     <app-package-header></app-package-header>
     <app-package-content></app-package-content>
   </div>
