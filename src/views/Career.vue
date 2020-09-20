@@ -1,5 +1,5 @@
 <template>
-  <div class="career-container">
+  <div id="careers" class="career-container">
     <app-career-header></app-career-header>
     <app-career-content></app-career-content>
   </div>
