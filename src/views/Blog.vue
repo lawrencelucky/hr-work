@@ -25,7 +25,7 @@ export default {
       rgba(0, 33, 71, 0.5),
       rgba(0, 33, 71, 0.5)
     ),
-    url('https://res.cloudinary.com/ddu7ud0f0/image/upload/v1600687729/blog_xqvilc.png');
+    url('https://res.cloudinary.com/ddu7ud0f0/image/upload/v1600690198/blog_1_stbst1.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top;
