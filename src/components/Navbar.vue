@@ -16,24 +16,6 @@
         /></a>
       </div>
 
-      <nav>
-        <ul>
-          <li class="nav-list">
-            <a class="nav-link" href="#whoweare">Who we are</a>
-          </li>
-          <li class="nav-list">
-            <a class="nav-link" href="#packages">Packages</a>
-          </li>
-          <li class="nav-list"><a class="nav-link" href="#blog">Blog</a></li>
-          <li class="nav-list">
-            <a class="nav-link" href="#careers">Careers</a>
-          </li>
-          <li class="nav-list">
-            <a class="nav-link" href="#contact">Contact</a>
-          </li>
-        </ul>
-      </nav>
-
       <div :class="this.opened ? 'responsive-nav' : ''">
         <img
           v-if="this.opened"
@@ -82,7 +64,6 @@ export default {
   methods: {
     openNavbar() {
       this.opened = true;
-      console.log(this.opened);
     },
     closeNavbar() {
       this.opened = false;
