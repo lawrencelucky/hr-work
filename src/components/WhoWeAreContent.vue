@@ -35,7 +35,7 @@
         <div class="image-container">
           <img
             class="image"
-            src="../assets/images/who-we-are.png"
+            src="https://res.cloudinary.com/ddu7ud0f0/image/upload/v1600687728/who-we-are_g9drwf.png"
             alt="who-are-img"
           />
         </div>

@@ -113,7 +113,7 @@ export default {};
           }
 
           .card-head {
-            background-image: url(../assets/images/package.png);
+            background-image: url('https://res.cloudinary.com/ddu7ud0f0/image/upload/v1600687726/package_iabsfd.png');
             height: 25rem;
             background-repeat: no-repeat;
             background-size: cover;
