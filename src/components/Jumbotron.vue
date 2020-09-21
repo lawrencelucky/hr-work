@@ -51,8 +51,8 @@ export default {};
     }
 
     @media screen and (max-width: 768px) {
-      justify-content: flex-end;
-      padding-bottom: 18rem;
+      justify-content: center;
+      padding: 0 2rem;
     }
 
     .jumbotron-text {
@@ -74,6 +74,7 @@ export default {};
     .jumbotron-header {
       font-size: 4rem;
       font-weight: 700;
+      text-align: center;
 
       @media screen and (max-width: 425px) {
         font-size: 3rem;
