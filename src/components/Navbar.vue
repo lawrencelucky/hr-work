@@ -4,38 +4,50 @@
       <div class="navbar-brand">
         <a href="#"
           ><img
-            v-if="!this.scrollValue"
+            v-if="!this.scrollValue && !this.opened"
             src="../assets/icons/hr-work-logo.svg"
             alt="hr-work-logo"
-            class="navbar-brand--logo"/>
+            class="logo"/>
           <img
-            v-if="this.scrollValue"
+            v-if="this.scrollValue || this.opened"
             src="../assets/icons/hr-work-logo-dark.svg"
             alt="hr-work-logo"
-            class="navbar-brand--logo"
+            class="logo"
         /></a>
       </div>
-      <nav>
-        <ul>
-          <li class="nav-list">
-            <a class="nav-link" href="#whoweare">Who we are</a>
-          </li>
-          <li class="nav-list">
-            <a class="nav-link" href="#packages">Packages</a>
-          </li>
-          <li class="nav-list"><a class="nav-link" href="#blog">Blog</a></li>
-          <li class="nav-list">
-            <a class="nav-link" href="#careers">Careers</a>
-          </li>
-          <li class="nav-list">
-            <a class="nav-link" href="#contact">Contact</a>
-          </li>
-        </ul>
-      </nav>
-      <div class="toggler-container">
-        <div class="toggler-icon">
-          <img src="../assets/icons/menu.svg" alt="" />
+
+      <div :class="this.opened ? 'responsive-nav' : ''">
+        <img
+          v-if="this.opened"
+          src="../assets/icons/hr-work-logo-dark.svg"
+          alt="hr-work-logo"
+          class="logo"
+        />
+        <nav>
+          <ul>
+            <li @click="closeNavbar" class="nav-list">
+              <a class="nav-link" href="#whoweare">Who we are</a>
+            </li>
+            <li @click="closeNavbar" class="nav-list">
+              <a class="nav-link" href="#packages">Packages</a>
+            </li>
+            <li @click="closeNavbar" class="nav-list">
+              <a class="nav-link" href="#blog">Blog</a>
+            </li>
+            <li @click="closeNavbar" class="nav-list">
+              <a class="nav-link" href="#careers">Careers</a>
+            </li>
+            <li @click="closeNavbar" class="nav-list">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </nav>
+        <div v-if="this.opened" class="close-icon-container">
+          <img @click="closeNavbar" src="../assets/icons/close.svg" alt="" />
         </div>
+      </div>
+      <div class="toggler-container">
+        <img @click="openNavbar" src="../assets/icons/menu.svg" alt="" />
       </div>
     </div>
   </div>
@@ -43,7 +55,20 @@
 
 <script>
 export default {
-  props: ['scrollValue']
+  props: ['scrollValue'],
+  data: () => {
+    return {
+      opened: false
+    };
+  },
+  methods: {
+    openNavbar() {
+      this.opened = true;
+    },
+    closeNavbar() {
+      this.opened = false;
+    }
+  }
 };
 </script>
 
@@ -151,17 +176,68 @@ export default {
     }
   }
 
+  .responsive-nav {
+    display: none;
+
+    @media screen and (max-width: 768px) {
+      position: fixed;
+      top: 0;
+      left: 0;
+      height: 100vh;
+      width: 100%;
+      background-color: #ffffff;
+      display: flex;
+      flex-flow: column;
+      justify-content: center;
+      align-items: center;
+
+      .logo {
+        width: 13rem;
+        margin-bottom: 5rem;
+      }
+
+      nav {
+        display: flex;
+
+        ul {
+          display: flex;
+          flex-flow: column;
+
+          .nav-list {
+            margin-right: 0 !important;
+
+            &:not(:last-child) {
+              margin-bottom: 3rem;
+            }
+
+            .nav-link {
+              color: #ef0633;
+              font-size: 2rem;
+            }
+          }
+        }
+      }
+
+      .close-icon-container {
+        img {
+          width: 2.3rem;
+          position: absolute;
+          top: 3rem;
+          right: 3rem;
+        }
+      }
+    }
+  }
+
   .toggler-container {
     display: none;
     align-items: center;
 
-    .toggler-icon {
-      img {
-        width: 3rem;
+    img {
+      width: 3rem;
 
-        @media screen and (max-width: 425px) {
-          width: 2rem;
-        }
+      @media screen and (max-width: 425px) {
+        width: 2rem;
       }
     }
 
