@@ -117,6 +117,7 @@ export default {
       ul {
         display: flex;
         align-items: center;
+        margin-top: 0.5rem;
 
         .nav-list {
           list-style: none;
@@ -160,6 +161,7 @@ export default {
     nav {
       display: flex;
       align-items: center;
+      margin-top: 0.5rem;
 
       @media screen and (max-width: 768px) {
         display: none;
