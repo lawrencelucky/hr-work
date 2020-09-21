@@ -6,7 +6,10 @@
         <p>30th Oct, 2020</p>
       </div>
       <div class="image-container">
-        <img src="../assets/images/careers.png" alt="careers" />
+        <img
+          src="https://res.cloudinary.com/ddu7ud0f0/image/upload/v1600687726/careers_ylkeho.png"
+          alt="careers"
+        />
       </div>
     </div>
 
@@ -16,7 +19,10 @@
         <p>30th Oct, 2020</p>
       </div>
       <div class="image-container">
-        <img src="../assets/images/careers.png" alt="careers" />
+        <img
+          src="https://res.cloudinary.com/ddu7ud0f0/image/upload/v1600687726/careers_ylkeho.png"
+          alt="careers"
+        />
       </div>
     </div>
 
@@ -26,7 +32,10 @@
         <p>30th Oct, 2020</p>
       </div>
       <div class="image-container">
-        <img src="../assets/images/careers.png" alt="careers" />
+        <img
+          src="https://res.cloudinary.com/ddu7ud0f0/image/upload/v1600687726/careers_ylkeho.png"
+          alt="careers"
+        />
       </div>
     </div>
 
@@ -36,7 +45,10 @@
         <p>30th Oct, 2020</p>
       </div>
       <div class="image-container">
-        <img src="../assets/images/careers.png" alt="careers" />
+        <img
+          src="https://res.cloudinary.com/ddu7ud0f0/image/upload/v1600687726/careers_ylkeho.png"
+          alt="careers"
+        />
       </div>
     </div>
   </div>

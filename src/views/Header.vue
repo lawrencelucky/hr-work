@@ -30,7 +30,7 @@ export default {
         rgba(0, 0, 0, 0) 15.36%,
         rgba(0, 0, 0, 0.688) 90.13%
       ),
-      url(../assets/images/header.png);
+      url('https://res.cloudinary.com/ddu7ud0f0/image/upload/v1600687727/header_rwbwko.png');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top;
